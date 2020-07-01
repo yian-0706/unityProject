@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/first.unity
+- path: Assets/medienerstellung.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
