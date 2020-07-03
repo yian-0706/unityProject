@@ -21,7 +21,7 @@ public class timeline : MonoBehaviour
         // if (t>=13) return;
 
         // if(mark[t] == 0) {    
-            int year = (int)Math.Floor(Time.time/3*25+1695); //1720+t*25;
+            int year = (int)Math.Floor(Time.time/3*25+1700); //1720+t*25;
             if(year>2020) year = 2020;
             text.text = year.ToString();
             

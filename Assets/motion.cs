@@ -34,15 +34,15 @@ public class motion : MonoBehaviour
             int number = (int)Math.Round(Math.Pow(2,t));
 
 		    for (int i = 0; i < number; i++)  {
-			    Vector3 p = UnityEngine.Random.insideUnitSphere*60;  //乘上球体半径
-                Instantiate(object1,new Vector3(p.x,p.y,p.z+160*t-4500),UnityEngine.Random.rotation);
+			    Vector3 p = UnityEngine.Random.insideUnitSphere*40;  //乘上球体半径
+                Instantiate(object1,new Vector3(p.x,p.y,p.z+140*t-4500),UnityEngine.Random.rotation);
 		    }
 
             mark[t]=1;    
             Debug.Log(string.Format("t is {0}",t));
         }
 
-        transform.position += new Vector3(0,0,160/3*Time.deltaTime);
+        transform.position += new Vector3(0,0,140/3*Time.deltaTime);
 
         // if(mark[t] == 0) {   
         //     int halfSide= (int)Math.Round(Math.Sqrt(Math.Pow(2,t+3))/2);
